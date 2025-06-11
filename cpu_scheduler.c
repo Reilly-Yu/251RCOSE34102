@@ -551,54 +551,6 @@ int main() {
     scanf("%d", &n);
 
     process* process_list = create_process(n);
-    
-    /*
-    process process_list[3] = {
-    {
-        .pid = 1,
-        .arrival_time = 0,
-        .cpu_burst = 9,
-        .priority = 3,
-        .io_count = 1,
-        .io_request_times = {3},
-        .io_bursts = {2},
-        .remaining_time = 9,
-        .current_io_index = 0,
-        .in_io = 0,
-        .io_remaining_time = 0,
-        .is_completed = 0
-    },
-    {
-        .pid = 2,
-        .arrival_time = 3,
-        .cpu_burst = 1,
-        .priority = 2,
-        .io_count = 1,
-        .io_request_times = {2},
-        .io_bursts = {1},
-        .remaining_time = 1,
-        .current_io_index = 0,
-        .in_io = 0,
-        .io_remaining_time = 0,
-        .is_completed = 0
-    },
-    {
-        .pid = 3,
-        .arrival_time = 2,
-        .cpu_burst = 5,
-        .priority = 1,
-        .io_count = 2,
-        .io_request_times = {1, 4},
-        .io_bursts = {1, 2},
-        .remaining_time = 5,
-        .current_io_index = 0,
-        .in_io = 0,
-        .io_remaining_time = 0,
-        .is_completed = 0
-    }
-}; */
-
-
 
     printf("\n[📋] 생성된 프로세스 목록:\n");
     print_processes(process_list, n);
